@@ -1514,3 +1514,7 @@ form {
 		margin-top: 30px;
 	}
 }
+
+.inverted {
+	filter: invert(100%);
+}
