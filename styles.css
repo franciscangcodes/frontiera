@@ -272,6 +272,7 @@ body {
 
 .mono {
   font-family: var(--font-geist-mono);
+  line-height: 1.5;
 }
 
 .fr-logo {
@@ -1553,12 +1554,6 @@ form {
   display: grid;
   align-items: center;
   position: relative;
-  h1 {
-    font-size: var(--header-font);
-    font-weight: bold;
-    text-align: center;
-    margin: 10px auto;
-  }
   h2 {
     font-size: var(--text-font);
     font-weight: 600;
@@ -1568,6 +1563,13 @@ form {
   span {
     color: var(--color-primary);
   }
+}
+
+.fr-h1 {
+  font-size: var(--header-font);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .circle-bg {
@@ -1633,6 +1635,51 @@ form {
     font-size: var(--text-font);
     font-weight: 600;
     margin: 0.5rem 0;
+  }
+}
+
+.fr-service__container {
+  display: flex;
+  margin: 2rem 0;
+  border-top: 2px solid var(--color-accent2);
+  gap: 1rem;
+  padding: 0 2rem;
+  .fr-service__left {
+    align-self: flex-start;
+    /* flex-basis: 1 1 400px; */
+    width: 400px;
+    margin-top: 1.5rem;
+    h2 {
+      font-size: var(--text-font);
+      /* text-transform: uppercase; */
+      font-weight: 600;
+      color: var(--text-color-main);
+    }
+  }
+  .fr-service__right {
+    /* background-color: red; */
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    p {
+      font-size: var(--text-font);
+      opacity: 0.8;
+    }
+    h3 {
+      font-size: var(--text-font);
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 0.2rem;
+    }
+    strong {
+      font-weight: 600;
+    }
+    .fr-stats {
+      /* max-width: 400px; */
+      margin-bottom: 0.5rem;
+    }
   }
 }
 
